@@ -18,8 +18,5 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         MyButton b = findViewById(R.id.b_one0);
         CardView parent = (CardView) b.getParent().getParent().getParent().getParent();
-        parent.measure(0, 0);
-        int h = parent.getMeasuredHeight();
-        int w = parent.getMeasuredWidth();
     }
 }
